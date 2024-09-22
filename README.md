@@ -1,25 +1,25 @@
 
-Enlarge是一个在PC网页端操作手机端数据的工具，目的打造一个开源的可定制化的PC与手机之间数据通信的系统，让你可以轻松就可以拥有AirDroid般的强大功能！
+Enlarge is a tool for operating mobile phone data on the PC web page. It aims to create an open source and customizable data communication system between PC and mobile phone, so that you can easily have the powerful functions of AirDroid!
 
 # Enlarge-Android
-Enlarge Android Server端,使用NanoHttpd作为http和websocket服务,使用注解处理器自动生成代码,目录结构:
+Enlarge Android Server On the client side, nanohttpd is used as the http and websocket service, and the annotation processor is used to automatically generate code. The directory structure is:
 
-### AnnotationProcessor 注解处理器项目
+### AnnotationProcessor Annotation Processor Project
 
-### Annotation 注解和公用接口定义
+### Annotation Annotations and public interface definitions
 
-### app 主工程
-libs - nanohttp, fastjson, rxjavalight库引用目录
+### app Main Project
+libs - nanohttp, fastjson, rxjavalight library reference directory
  
-src/main/assets/dist - Enlarge-Web项目布署目录
+src/main/assets/dist - Enlarge-Web project deployment directory
 
-src/main/com/google/zxing - 二维码扫描代码
+src/main/com/google/zxing - QR code scanning code
 
-src/main/org/cmdmac/enlarge/server - http和websocket服务代码
+src/main/org/cmdmac/enlarge/server - http and websocket service code
 
-##### Http服务入口 : AppNanolets
+##### Http service entry : AppNanolets
 
-##### 增加Controller示例
+##### Add Controller Example
 ```java
 @Controller(name = "filemanager")
 //返回给桌面的入口配置
@@ -83,7 +83,7 @@ public class FileManagerHandler {
 
 }
 ```
-Controller一键注入入口:
+Controller One-click injection entrance:
 ```java
  public static class UriRouter extends BaseRouter {
 
@@ -118,6 +118,6 @@ Controller一键注入入口:
     }
 ```
     
-##### websocket实现 : EnlargeWebSocket
+##### web socket accomplish : EnlargeWebSocket
 
             
